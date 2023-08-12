@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.event-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.event-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    width: 200px;
+    text-align: center;
+}
+
+.booking-form {
+    display: none;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+}

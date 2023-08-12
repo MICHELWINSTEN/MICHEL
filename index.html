@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ticket Booking System</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to the Ticket Booking System</h1>
+
+    <div class="event-list">
+        <div class="event-card" onclick="showBookingForm('concert')">
+            <h2>Concert</h2>
+            <p>Date: August 20, 2023</p>
+            <p>Venue: Arena Stadium</p>
+            <p>Price: $50</p>
+        </div>
+        <div class="event-card" onclick="showBookingForm('movie')">
+            <h2>Movie</h2>
+            <p>Date: August 25, 2023</p>
+            <p>Venue: Cinema City</p>
+            <p>Price: $10</p>
+        </div>
+        <!-- Add more event cards here -->
+    </div>
+
+    <div class="booking-form" id="bookingForm">
+        <h2>Book Tickets</h2>
+        <form onsubmit="return bookTickets()">
+            <label for="event">Event:</label>
+            <input type="text" id="event" name="event" readonly>
+            <br>
+
+            <label for="tickets">Number of Tickets:</label>
+            <input type="number" id="tickets" name="tickets" min="1" required>
+            <br>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
